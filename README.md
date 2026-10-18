@@ -54,3 +54,6 @@ python3 task1_stack.py
 python3 task2_fullname.py
 ```
 No external packages needed (Python 3.8+).
+
+---
+*Shared as a portfolio piece after marking. Please do not reuse this work in your own assessed coursework.*
