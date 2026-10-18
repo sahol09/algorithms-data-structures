@@ -163,7 +163,7 @@ class Full_Name:
         """
         if part not in ('f', 'm', 'l'):
             print("Invalid part for Remove_word. Use 'f', 'm', or 'l'.")
-            return
+            return False
 
         current = self.head
         prev = None
@@ -192,6 +192,7 @@ class Full_Name:
             current.position = pos
             pos += 1
             current = current.next
+        return True
 
 
 # HELPER FUNCTIONS
@@ -300,10 +301,11 @@ def main():
 
         elif choice == "7":
             part = input("Which word to remove? (f = first, m = middle, l = last): ").strip().lower()
-            full.Remove_word(part)
-            print("After removing that word:")
-            full.Print_list()
-            full.Print_full_name()
+            # Only show the "after" view if a word was actually removed
+            if full.Remove_word(part):
+                print("After removing that word:")
+                full.Print_list()
+                full.Print_full_name()
 
         elif choice == "0":
             print("Exiting program.")
