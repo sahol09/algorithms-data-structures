@@ -44,7 +44,7 @@ Driven by a menu-based CLI with input validation.
 Hand-traced, step by step, on the letters of my name `[f,a,r,h,a,n,a,h,m,e,d,s,a,h,o,l]`:
 - **Sorting:** insertion sort (15 passes), merge sort (15 merges), quick sort (last-element pivot, 11 partitions), plus a best/worst-case, space and stability comparison
 - **Graphs:** Dijkstra's shortest paths from node A, with a distance table at every step
-- **Hashing:** 26-bucket hash table (`h(c) = c − 'a'`) with chaining for repeated letters
+- **Hashing:** 26-bucket hash table (a → 1 … z → 26) with chaining for repeated letters
 - **Trees:** binary search tree built from insertion order, ignoring duplicates
 
 ## Run
